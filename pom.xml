@@ -4,6 +4,7 @@
   <artifactId>Drive-thru</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>drive</name>
+  <packaging>jar</packaging>
   <dependencies>
   
 <dependency>
