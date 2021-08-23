@@ -28,8 +28,8 @@ public class FindFileByName {
 		return list;
 	}
 	
-	public static void main(String[] args)throws IOException {
-		List<File> rootgoogleFiles = getGoogleFilesByName("K");
+	public static void find(String fileNameString)throws IOException {
+		List<File> rootgoogleFiles = getGoogleFilesByName(fileNameString);
 		for(File folder: rootgoogleFiles) {
 			System.out.println("Mime Type: "+folder.getMimeType()+"---Name: "+folder.getName());
 		}

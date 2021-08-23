@@ -45,9 +45,9 @@ public class CreateGoogleFile {
 		return _createGoogleFile(googleFolderIdString, contentTypeString, customNameString, uploadStreamContent);
 	}
 	
-	public static void main(String[] args)throws IOException{
-		java.io.File uploadFile = new java.io.File("/home/developer/Pictures/d/dp.jpg");
-		File googleFile = createGoogleFile(null, "image/jpg", "divya.jpg", uploadFile);
+	public static void upload(String ...args)throws IOException{
+		java.io.File uploadFile = new java.io.File(args[1]);
+		File googleFile = createGoogleFile(null, args[2], args[3], uploadFile);
 		System.out.println("Created Google File!\nWebContentLink: "+googleFile.getWebContentLink());
 		System.out.println("WebViewLink: "+googleFile.getWebViewLink());
 		System.out.println("Done!");

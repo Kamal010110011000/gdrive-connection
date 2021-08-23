@@ -23,8 +23,8 @@ public class CreateFolder {
 		return file;
 	}
 	
-	public static void main(String[] args)throws IOException {
-		File folderFile = createGoogleFolder(null, "project");
+	public static void createFolder(String folderNameString)throws IOException {
+		File folderFile = createGoogleFolder(null, folderNameString);
 		System.out.println("created folder with id= "+folderFile.getId());
 		System.out.println("\t\t name= "+folderFile.getName());
 		
